@@ -51,7 +51,6 @@ class WebPerformance {
     // 重写fetch及XMLHttpRequest用来拦截ajax请求.
     this.rewriteFetch();
     this.rewriteXMLHttpRequest();
-
     // 获取页面性能.
     this.page = this.getPagePerformance();
     // 获取资源加载性能.
@@ -90,7 +89,7 @@ class WebPerformance {
   private getResourcePerformance = (): object[] => {
     let rList = [];
     if( window.performance && window.performance.getEntries ) {
-      let resource = window.performance.getEntriesByType('resource');
+      const resource = window.performance.getEntriesByType('resource');
       if( !resource && !resource.length) return rList;
 
       resource.forEach( (item: PerformanceResourceTiming) => {
