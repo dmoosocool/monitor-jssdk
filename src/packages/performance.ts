@@ -42,15 +42,12 @@ const defaultPagePerformance: I_PagePerformance = {
   parsingDom: 0
 }
 
-class WebPerformance {
+export class WebPerformance {
 
   public page: I_PagePerformance;  // 页面性能.
   public resource: object[];  // 资源性能.
 
   constructor() {
-    // 重写fetch及XMLHttpRequest用来拦截ajax请求.
-    this.rewriteFetch();
-    this.rewriteXMLHttpRequest();
     // 获取页面性能.
     this.page = this.getPagePerformance();
     // 获取资源加载性能.
@@ -101,22 +98,10 @@ class WebPerformance {
           decodedBodySize: item.decodedBodySize || 0,
           nextHopProtocol: item.nextHopProtocol,
         }
+
+        rList.push(json);
       });
     }
     return rList;
-  }
-
-  /**
-   * 重写fetch.
-   */
-  private rewriteFetch() {
-
-  }
-
-  /**
-   * 重写XMLHttpRequest.
-   */
-  private rewriteXMLHttpRequest() {
-
   }
 }

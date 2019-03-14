@@ -16,11 +16,13 @@ const write = (obj: any, label: string) => {
   titleNode.style.fontSize = '18px';
   titleNode.style.padding = '5px 0'
   titleNode.style.margin = '0';
-
+  titleNode.style.wordBreak = 'break-all';
+  
   let valueNode = document.createElement('div');
   valueNode.appendChild(document.createTextNode( JSON.stringify(obj) ));
   valueNode.style.margin = '10px 0';
   valueNode.style.fontSize = '11px';
+  valueNode.style.wordBreak = 'break-all';
 
   wapper.appendChild(titleNode);
   wapper.appendChild(valueNode);

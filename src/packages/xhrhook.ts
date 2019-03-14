@@ -3,64 +3,68 @@
 // const RealXMLHttpRequest = XMLHttpRequest;
 
 export class xhrHook {
-  // RealXMLHttpRequest: {new (): XMLHttpRequest} = RealXMLHttpRequest;
-  public _xhr = new XMLHttpRequest();
-  public _originOpen = this._xhr.open;
-  public _originSend = this._xhr.send;
+  public _originOpen = XMLHttpRequest.prototype.open; // 原XMLHttpRequest.open方法
+  public _originSend = XMLHttpRequest.prototype.send; // 原XMLHttpRequest.send方法
   public _flag:boolean = false;
   public req = {
-    xhrInfo: {},
+    xhrInfo: {
+      url: null,
+      method: null,
+      status: null,
+      event: null,
+      success: null,
+      duration: null,
+      responseSize: null,
+      requestSize: null,
+      type: null
+    },
     startTime: 0,
   };
 
   constructor(cb) {
-    
     if( true === this._flag ) {
       return void 0;
     }
+    const _self = this;
     this._flag = true;
-    this._originOpen = this._xhr.open;
     
     // 重写open方法.
-    this._xhr.open = function(){
+    XMLHttpRequest.prototype.open = function(){
       // 暂存url及请求方式.
-      this.req.xhrInfo = {
-        url: arguments[1],
-        method: arguments[0],
-        status: null,
-      }
-      return this._originOpen.apply(this, arguments);
+      _self.req.xhrInfo.url = arguments[1];
+      _self.req.xhrInfo.method = arguments[0];
+      _self.req.xhrInfo.status = null;
+      return _self._originOpen.apply(this, arguments);
     }
 
     // 重写send方法.
-    this._xhr.send = function( value ) {
-      const _self = this;
-      this.req.startTime = Date.now();
+    XMLHttpRequest.prototype.send = function( value ) {
+      _self.req.startTime = Date.now();
       const ajaxEnd = ( event ) => () => {
-        if( _self.response ) {
+        if( this.response ) {
           let responseSize = null;
-          switch( _self.responseType ) {
+          switch( this.responseType ) {
             case 'json': 
-              responseSize = JSON && JSON.stringify(_self.response).length;
+              responseSize = JSON && JSON.stringify(this.response).length;
               break;
             case 'blob':
             case 'moz-blob':
-              responseSize = _self.response.size;
+              responseSize = this.response.size;
               break;
             case 'arraybuffer':
-              responseSize = _self.response.byteLength;
+              responseSize = this.response.byteLength;
               break;
             case 'document':
-              const domele = _self.response.documentElement;
+              const domele = this.response.documentElement;
               responseSize = domele && domele.innerHTML && ( domele.innerHTML.length + 28);
               break;
             default:
-              responseSize = _self.response.length;
+              responseSize = this.response.length;
               break;
           }
           _self.req.xhrInfo.event = event;
-          _self.req.xhrInfo.status = _self.status;
-          _self.req.xhrInfo.success = ( _self.status >= 200 && _self.status <= 206 ) || _self.status === 304;
+          _self.req.xhrInfo.status = this.status;
+          _self.req.xhrInfo.success = ( this.status >= 200 && this.status <= 206 ) || this.status === 304;
           _self.req.xhrInfo.duration = Date.now() - _self.req.startTime;
           _self.req.xhrInfo.responseSize = responseSize;
           _self.req.xhrInfo.requestSize = value ? value.toString().length: 0;
@@ -86,10 +90,10 @@ export class xhrHook {
           }
         };
       }
-      return this._originSend.apply( this, arguments );
+      return _self._originSend.apply( this, arguments );
     };
 
-    
+    // 重写fetch
     if( window.fetch ) {
       const _originFetch = window.fetch;
       window.fetch = function (){
