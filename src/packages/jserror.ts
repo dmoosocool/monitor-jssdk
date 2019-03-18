@@ -1,6 +1,8 @@
 import { I_ReportData } from '../interfaces/reportdata';
+import { write } from '../util';
 export class jserror {
-  constructor(){
+
+  constructor( ) {
     this.catchJSError();
     this.catchResourceError();
   }
@@ -13,7 +15,7 @@ export class jserror {
       const category = 'jserror';
       const reports: I_ReportData = {
         msg,
-        category,
+        category, 
         timestamp: new Date().getTime(),
         url,
         source,
@@ -23,19 +25,18 @@ export class jserror {
         }
       }
 
-      //Todo: 资源上报.
-      return reports;
+      write(reports, 'JS_ERROR');
     }
   }
 
   // 捕获资源( img, script, css, jsonp )错误.
   catchResourceError() {
-    window.addEventListener( 'error' , function( e ) {
-      const msg = `${e.target[0].localName} is load error.`;
+    document.addEventListener( 'error' , function( e:any ) {
+      const source = e.target.outerHTML;
+      const msg = `${ e.target.localName } is load error.`;
       const category = 'resource';
       const timestamp = new Date().getTime();
       const url = location.href;
-      const source = e.target[0].currentSrc;
       const reports: I_ReportData = {
         msg,
         category,
@@ -44,16 +45,33 @@ export class jserror {
         source,
         data: {
           type: e.type,
-          target: e.target[0].localName,
+          target: source,
         }
       };
-      //Todo: 资源上报.
-      return reports;
-    });
+
+      write(reports, 'RESOURCE_ERROR');
+    }, true);
   }
 
   // 捕获Ajax错误.
-  catchAjaxError() {
-    const _originAjaxAbort = XMLHttpRequest.prototype.abort;
-  }
+  // catchAjaxError() {
+  //   const _originAjaxSend = XMLHttpRequest.prototype.send;
+  //   const cb = this.AjaxCallback;
+  //   XMLHttpRequest.prototype.send = function (){
+  //     const _origin_onreadystatechange = this.onreadystatechange;
+  //     this.onreadystatechange = function(res) {
+  //       if( this.status === 200 && this.readySize === 4) {
+  //         cb && cb(res, 'OK');
+  //       }
+  //       else if( this.status >= 400 && this.status <= 499) {
+  //         cb && cb(res, 'CLIENT_ERROR');  
+  //       }
+  //       else if( this.status >= 500 && this.status <= 599) {
+  //         cb && cb(res, 'SERVER_ERROR');
+  //       }
+  //       _origin_onreadystatechange.apply( this, arguments );
+  //     }
+  //     _originAjaxSend.apply( this, arguments);
+  //   }
+  // }
 }

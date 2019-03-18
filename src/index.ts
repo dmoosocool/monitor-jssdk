@@ -6,11 +6,13 @@ import { STORAGE } from './packages/storage';
 import store from 'store';
 import { xhrHook } from './packages/xhrhook';
 import  { WebPerformance } from './packages/performance';
+import { jserror } from './packages/jserror';
 
 const { ua, browser, engine, os, device, cpu } = UA;
 const { MONITOR_INIT, PAGE_VISTOR_TIME, } = STORAGE;
 
 const pageInit = () => {
+  new jserror();
   let monitorInit = store.get(MONITOR_INIT.key);
   let pageVistorTime = store.get(PAGE_VISTOR_TIME.key);
   const date = new Date();
@@ -54,7 +56,11 @@ const pageInit = () => {
 
   new xhrHook( (xhrInfo) => {
     write(xhrInfo, 'xhrInfo');
-  })
+  });
 }
 
 pageInit();
+
+document.body.onclick = function() {
+  write(['asd','asd'],'test');
+}

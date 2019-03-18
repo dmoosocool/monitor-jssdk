@@ -6,6 +6,22 @@
  * @param label 显示的标签.
  */
 const write = (obj: any, label: string) => {
+
+  const renderText = function (content:any, wapperElement:Element) {
+    var type = Object.prototype.toString.call(content);
+
+    switch(type) {
+      case '[object Object]':
+        wapperElement.append(document.createTextNode( JSON.stringify(content)));
+        break;
+      case '[object Array]': 
+        content.forEach(element => {
+          wapperElement.append(document.createTextNode( JSON.stringify(element)));
+          wapperElement.append(document.createElement('br'));
+        });
+        break;
+    }
+  }
   let wapper = document.createElement('div');
   wapper.style.padding = '10px';
   wapper.style.border = '1px solid #333';
@@ -19,7 +35,8 @@ const write = (obj: any, label: string) => {
   titleNode.style.wordBreak = 'break-all';
   
   let valueNode = document.createElement('div');
-  valueNode.appendChild(document.createTextNode( JSON.stringify(obj) ));
+  // valueNode.appendChild(document.createTextNode(JSON.stringify(obj)));
+  renderText(obj, valueNode);
   valueNode.style.margin = '10px 0';
   valueNode.style.fontSize = '11px';
   valueNode.style.wordBreak = 'break-all';

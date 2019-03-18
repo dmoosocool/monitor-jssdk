@@ -85,7 +85,7 @@ export class xhrHook {
             this._originOpen.apply( this, arguments);
           }
 
-          if( this.readyState === 4 ) {
+          if( this.readyState === 4 ) { 
             ajaxEnd('end')();
           }
         };
