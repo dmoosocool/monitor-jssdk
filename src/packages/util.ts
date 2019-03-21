@@ -1,4 +1,28 @@
 'use strict';
+const detectType = ( source ): String => {
+  return Object.prototype.toString
+    .call(source)
+    .split(/[\[,\s,\]]/)[2]
+    .toLowerCase()
+}
+
+/**
+ * 深拷贝
+ * @param source 需要拷贝的对象.
+ */
+const deepCopy = (source):Object => {
+  const type = detectType(source);
+  if( !(type === 'object' || type === 'array')) {
+    return source;
+  }
+
+  const newObject = type === 'array' ? source.slice() : Object.assign( {}, source );
+  Object.keys(newObject).forEach( (key) => {
+    newObject[key] = deepCopy(newObject[key]);
+  });
+
+  return newObject;
+}
 
 /**
  * 输出调试,
@@ -6,7 +30,6 @@
  * @param label 显示的标签.
  */
 const write = (obj: any, label: string) => {
-
   const renderText = function (content:any, wapperElement:Element) {
     var type = Object.prototype.toString.call(content);
 
@@ -18,7 +41,11 @@ const write = (obj: any, label: string) => {
         content.forEach(element => {
           wapperElement.append(document.createTextNode( JSON.stringify(element)));
           wapperElement.append(document.createElement('br'));
+          wapperElement.append(document.createElement('br'));
         });
+        break;
+      default:
+        wapperElement.append(document.createTextNode( JSON.stringify(content)));
         break;
     }
   }
@@ -88,4 +115,5 @@ export {
   write,
   randomString,
   getTodayLastTime,
+  deepCopy,
 }

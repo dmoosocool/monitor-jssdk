@@ -1,9 +1,12 @@
-'use strict';
+import { REPORT_TYPE, REPORT_DATA} from  '../interfaces/reportdata';
+export const K_REQ_QUEUE = 'MONITOR_QUEUE';
+export const E_REPORT_TYPE = REPORT_TYPE;
+export interface I_REPORT_DATA extends REPORT_DATA {};
 
 /**
  * 页面存储的key, 
  */
-const STORAGE = {
+export const STORAGE = {
   // 计算uv, 
   MONITOR_INIT: {
     key: '__MONITOR_PAGE_HASH',
@@ -23,6 +26,3 @@ const STORAGE = {
   },
 }
 
-export {
-  STORAGE
-}

@@ -10,13 +10,19 @@
   <img src="https://api.hanximeng.com/ranimg/api.php" width="100%"/>
   <p class="hitokoto"></p>
   <p class="from"></p>
-
-  <img src="http://dsadasdsa.com/dsadsadas.png"/>
   <script src="https://api.hanximeng.com/hitokoto/hitokoto.php"></script>
   <script src="./output/bundle.umd.js"></script>
-  <!-- 链接一个错误的JavaScript -->
-  <script src="./output/dshjakhk.js"></script>
   <script src="https://cdn.bootcss.com/jquery/3.3.1/jquery.min.js"></script>
   <script src="https://cdn.bootcss.com/twitter-bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
+  <script>
+    $.ajax({
+      url: 'http://v1.hitokoto.cn/?c=a&encode=json',
+      type: 'GET',
+      success: function(resp){
+        console.log(resp);
+      }
+    });
+  </script>
 </body>
 </html>

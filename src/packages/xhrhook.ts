@@ -1,7 +1,5 @@
-
-
-// const RealXMLHttpRequest = XMLHttpRequest;
-
+import { I_ReportData } from '../interfaces/reportdata';
+import { REPORT_TYPE } from '../config';
 export class xhrHook {
   public _originOpen = XMLHttpRequest.prototype.open; // 原XMLHttpRequest.open方法
   public _originSend = XMLHttpRequest.prototype.send; // 原XMLHttpRequest.send方法
@@ -16,7 +14,7 @@ export class xhrHook {
       duration: null,
       responseSize: null,
       requestSize: null,
-      type: null
+      type: null,
     },
     startTime: 0,
   };
@@ -69,7 +67,25 @@ export class xhrHook {
           _self.req.xhrInfo.responseSize = responseSize;
           _self.req.xhrInfo.requestSize = value ? value.toString().length: 0;
           _self.req.xhrInfo.type = 'xhr';
-          cb( _self.req.xhrInfo );
+
+          const resp = ( this.getResponseHeader('content-type').indexOf('json') > -1 ) ? JSON.parse(this.response) : this.response;
+
+          
+          if(!_self.req.xhrInfo.success) {
+            const ajaxError:I_ReportData = {
+              type: REPORT_TYPE.AjaxError,
+              data: {
+                msg: `type:[${_self.req.xhrInfo.type}] ${_self.req.xhrInfo.url} request faild.`,
+                timestamp: +new Date,
+                url: location.href,
+                reporter: _self.req.xhrInfo,
+              }
+            }
+
+            console.log(ajaxError);
+          }
+
+          cb( _self.req.xhrInfo, resp );
         }
       }
 
