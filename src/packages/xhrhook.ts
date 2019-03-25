@@ -1,5 +1,5 @@
-import { I_ReportData } from '../interfaces/reportdata';
-import { REPORT_TYPE } from '../config';
+import { I_REPORT_DATA } from '../config/index';
+import { REPORT_TYPE } from '../interfaces/reportdata';
 export class xhrHook {
   public _originOpen = XMLHttpRequest.prototype.open; // 原XMLHttpRequest.open方法
   public _originSend = XMLHttpRequest.prototype.send; // 原XMLHttpRequest.send方法
@@ -72,7 +72,7 @@ export class xhrHook {
 
           
           if(!_self.req.xhrInfo.success) {
-            const ajaxError:I_ReportData = {
+            const ajaxError:I_REPORT_DATA = {
               type: REPORT_TYPE.AjaxError,
               data: {
                 msg: `type:[${_self.req.xhrInfo.type}] ${_self.req.xhrInfo.url} request faild.`,

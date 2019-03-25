@@ -14,7 +14,9 @@ export class sendRequest {
   }
 
   checkQueue() {
-    const reportQueue = JSON.parse(store.get( K_REQ_QUEUE ));
+    const queue = store.get( K_REQ_QUEUE );
+    if(!queue) return;
+    const reportQueue = JSON.parse(queue);
     if(!!reportQueue) {
       // todo: 解析并队列上报.
     }
