@@ -5,11 +5,12 @@ export enum REPORT_TYPE {
   JsError,
   ResourceError,
   AjaxError,
+  AjaxSuccess
 }
 
 export interface REPORT_DATA {
   /** 类型 */
-  type: REPORT_TYPE.AjaxError | REPORT_TYPE.JsError | REPORT_TYPE.Performace | REPORT_TYPE.ResourceError | REPORT_TYPE.UserAgent;
+  type: REPORT_TYPE.AjaxError | REPORT_TYPE.AjaxSuccess | REPORT_TYPE.JsError | REPORT_TYPE.Performace | REPORT_TYPE.ResourceError | REPORT_TYPE.UserAgent;
   data: {
     msg: string;
     /** 时间戳 */
@@ -19,7 +20,7 @@ export interface REPORT_DATA {
     /** 资源链接 */
     source?: string;
     /** 上报数据 */
-    reporter: I_JSErrorData | I_ResourceData | I_AjaxData;
+    reporter: I_JSErrorData | I_ResourceData | I_AjaxData | string;
   }
 }
 
@@ -57,5 +58,7 @@ interface I_AjaxData {
   /** Request长度 */
   requestSize: number,
   /** 请求类型,  */
-  type: 'XMLHttpRequest' | 'fetch'
+  type: 'XMLHttpRequest' | 'fetch',
+  /** 请求数据 */
+  data: any;
 }

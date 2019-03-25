@@ -1,5 +1,7 @@
-import { I_REPORT_DATA } from '../config/index';
+import { I_REPORT_DATA, SERVER_URL } from '../config/index';
 import { REPORT_TYPE } from '../interfaces/reportdata';
+import { param2obj, param as ParerURL } from './util';
+import { sendRequest } from './send';
 export class xhrHook {
   public _originOpen = XMLHttpRequest.prototype.open; // 原XMLHttpRequest.open方法
   public _originSend = XMLHttpRequest.prototype.send; // 原XMLHttpRequest.send方法
@@ -15,21 +17,23 @@ export class xhrHook {
       responseSize: null,
       requestSize: null,
       type: null,
+      data: null,
     },
     startTime: 0,
   };
 
-  constructor(cb) {
+  public sender: sendRequest;
+  constructor( sender: sendRequest) {
     if( true === this._flag ) {
       return void 0;
     }
     const _self = this;
     this._flag = true;
-    
+    this.sender = sender;
     // 重写open方法.
     XMLHttpRequest.prototype.open = function(){
       // 暂存url及请求方式.
-      _self.req.xhrInfo.url = arguments[1];
+      // _self.req.xhrInfo.url = arguments[1];
       _self.req.xhrInfo.method = arguments[0];
       _self.req.xhrInfo.status = null;
       return _self._originOpen.apply(this, arguments);
@@ -37,8 +41,9 @@ export class xhrHook {
 
     // 重写send方法.
     XMLHttpRequest.prototype.send = function( value ) {
+      const _that = this;
       _self.req.startTime = Date.now();
-      const ajaxEnd = ( event ) => () => {
+      var ajaxEnd = ( event ) => async () => {
         if( this.response ) {
           let responseSize = null;
           switch( this.responseType ) {
@@ -60,6 +65,7 @@ export class xhrHook {
               responseSize = this.response.length;
               break;
           }
+          _self.req.xhrInfo.url = _that.responseURL;
           _self.req.xhrInfo.event = event;
           _self.req.xhrInfo.status = this.status;
           _self.req.xhrInfo.success = ( this.status >= 200 && this.status <= 206 ) || this.status === 304;
@@ -67,25 +73,23 @@ export class xhrHook {
           _self.req.xhrInfo.responseSize = responseSize;
           _self.req.xhrInfo.requestSize = value ? value.toString().length: 0;
           _self.req.xhrInfo.type = 'xhr';
-
-          const resp = ( this.getResponseHeader('content-type').indexOf('json') > -1 ) ? JSON.parse(this.response) : this.response;
-
-          
-          if(!_self.req.xhrInfo.success) {
-            const ajaxError:I_REPORT_DATA = {
-              type: REPORT_TYPE.AjaxError,
-              data: {
-                msg: `type:[${_self.req.xhrInfo.type}] ${_self.req.xhrInfo.url} request faild.`,
-                timestamp: +new Date,
-                url: location.href,
-                reporter: _self.req.xhrInfo,
-              }
+          _self.req.xhrInfo.data = value;
+          // 判断是否为自身上报请求, 如果是则不记录. 并删除标记字段.
+          if( typeof value === 'string' || !value) {
+            let param = !value ? {} : param2obj(value.toString());
+            if(!param.hasOwnProperty('_reporter')) {
+              let ajaxReporter:I_REPORT_DATA = {
+                type: (!!_self.req.xhrInfo.success) ? REPORT_TYPE.AjaxSuccess : REPORT_TYPE.AjaxError,
+                data: {
+                  msg: (!!_self.req.xhrInfo.success) ? 'success' : `type:[${_self.req.xhrInfo.type}] ${_self.req.xhrInfo.url} request faild.`,
+                  timestamp: +new Date,
+                  url: location.href,
+                  reporter: encodeURIComponent(JSON.stringify(_self.req.xhrInfo)),
+                }
+              };
+              await _self.sender.request(ajaxReporter.data, ajaxReporter.type);
             }
-
-            console.log(ajaxError);
           }
-
-          cb( _self.req.xhrInfo, resp );
         }
       }
 
@@ -149,8 +153,6 @@ export class xhrHook {
           fetchData.status = response.status;
           fetchData.type = 'fetch';
           fetchData.duration = Date.now() - startTime;
-          cb( fetchData );
-
           return response;
         });
       }

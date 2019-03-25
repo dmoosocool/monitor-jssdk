@@ -111,9 +111,53 @@ const getTodayLastTime = ():string => {
 	return `${year}/${month}/${day} 23:59:59`;
 }
 
+/**
+ * 将请求参数转化成Url形式, 只支持一级参数.
+ * @param obj 需要转化的对象
+ */
+const param = (obj: Object):string => {
+  const keys = Object.keys(obj);
+  const parseArr = ['[object Array]', '[object Object]']
+  let urlString = [];
+  keys.forEach( (key) => {
+    if( parseArr.indexOf(Object.prototype.toString.call(obj[key])) > -1 ) {
+      urlString.push(`${key}=${JSON.stringify(obj[key])}`);
+    }
+    else{
+      urlString.push(`${key}=${obj[key]}`);
+    }
+  });
+  return urlString.join('&');
+}
+
+/**
+ * 将URL形式的字符串转成对象
+ * @param value 
+ */
+const param2obj = (value: string):Object => {
+  if(!value) return {};
+  let obj = {};
+  let returnArr = [];
+  if( value.indexOf('&') > -1) {
+    returnArr = value.split('&')
+  }
+  else {
+    returnArr.push(value);
+  }
+
+  for( var i = 0; i < returnArr.length; i++ ) {
+    var tmp = returnArr[i].split('=');
+    if( !tmp[0] ) continue;
+    obj[tmp[0]] = tmp[1] === undefined ? "" : tmp[1];
+  }
+  return obj;
+}
+
 export {
   write,
   randomString,
   getTodayLastTime,
   deepCopy,
+  param,
+  param2obj
 }

@@ -1,5 +1,6 @@
 'use strict';
-
+import { sendRequest } from './send';
+import { SERVER_URL, E_REPORT_TYPE } from '../config/index';
 interface I_PagePerformance {
   /** 是否支持page performance */
   status: boolean;
@@ -46,12 +47,21 @@ export class WebPerformance {
 
   public page: I_PagePerformance;  // 页面性能.
   public resource: object[];  // 资源性能.
+  public sender: sendRequest;
 
-  constructor() {
+  constructor( sender: sendRequest) {
+    this.sender = sender;
     // 获取页面性能.
     this.page = this.getPagePerformance();
     // 获取资源加载性能.
     this.resource = this.getResourcePerformance();
+
+    this.senddata();
+  }
+
+  private async senddata() {
+    await this.sender.request(this.page, E_REPORT_TYPE.Performace);
+    await this.sender.request(this.resource, E_REPORT_TYPE.ResourceError);
   }
 
   /**

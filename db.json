@@ -1,0 +1,457 @@
+{
+  "reporter": [
+    {
+      "id": 1,
+      "data": "",
+      "type": ""
+    },
+    {
+      "data": "{\"ua\":\"Mozilla/5.0 (iPhone; CPU iPhone OS 11_0 like Mac OS X) AppleWebKit/604.1.38 (KHTML, like Gecko) Version/11.0 Mobile/15A372 Safari/604.1\",\"browser\":{\"name\":\"Mobile Safari\",\"version\":\"11.0\",\"major\":\"11\"},\"engine\":{\"name\":\"WebKit\",\"version\":\"604.1.38\"},\"os\":{\"name\":\"iOS\",\"version\":\"11.0\"},\"device\":{\"vendor\":\"Apple\",\"model\":\"iPhone\",\"type\":\"mobile\"},\"cpu\":{}}",
+      "type": "2",
+      "_reporter": "true",
+      "id": 2
+    },
+    {
+      "data": "{\"msg\":\"typeerror: cannot set property 'type' of undefined\\n    at xmlhttprequest.<anonymous> (http://localhost:8000/output/bundle.umd.js:1569:41)\",\"timestamp\":1553503243120,\"url\":\"http://localhost:8000/\",\"source\":\"http://localhost:8000/output/bundle.umd.js\",\"reporter\":{\"line\":1569,\"col\":41}}",
+      "type": "3",
+      "id": 3
+    },
+    {
+      "data": "{\"status\":true,\"dns\":0,\"tcp\":1,\"wct\":15,\"dom\":592,\"load\":-1553503242228,\"ready\":4,\"redirct\":0,\"unload\":0,\"request\":2,\"parsingDom\":11533}",
+      "type": "1",
+      "id": 4
+    },
+    {
+      "data": "[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object]",
+      "type": "4",
+      "id": 5
+    },
+    {
+      "data": "{\"ua\":\"Mozilla/5.0 (iPhone; CPU iPhone OS 11_0 like Mac OS X) AppleWebKit/604.1.38 (KHTML, like Gecko) Version/11.0 Mobile/15A372 Safari/604.1\",\"browser\":{\"name\":\"Mobile Safari\",\"version\":\"11.0\",\"major\":\"11\"},\"engine\":{\"name\":\"WebKit\",\"version\":\"604.1.38\"},\"os\":{\"name\":\"iOS\",\"version\":\"11.0\"},\"device\":{\"vendor\":\"Apple\",\"model\":\"iPhone\",\"type\":\"mobile\"},\"cpu\":{}}",
+      "type": "2",
+      "_reporter": "true",
+      "id": 6
+    },
+    {
+      "data": "{\"msg\":\"typeerror: cannot set property 'type' of undefined\\n    at xmlhttprequest.<anonymous> (http://localhost:8000/output/bundle.umd.js:1569:41)\",\"timestamp\":1553503570070,\"url\":\"http://localhost:8000/\",\"source\":\"http://localhost:8000/output/bundle.umd.js\",\"reporter\":{\"line\":1569,\"col\":41}}",
+      "type": "3",
+      "id": 7
+    },
+    {
+      "data": "{\"ua\":\"Mozilla/5.0 (iPhone; CPU iPhone OS 11_0 like Mac OS X) AppleWebKit/604.1.38 (KHTML, like Gecko) Version/11.0 Mobile/15A372 Safari/604.1\",\"browser\":{\"name\":\"Mobile Safari\",\"version\":\"11.0\",\"major\":\"11\"},\"engine\":{\"name\":\"WebKit\",\"version\":\"604.1.38\"},\"os\":{\"name\":\"iOS\",\"version\":\"11.0\"},\"device\":{\"vendor\":\"Apple\",\"model\":\"iPhone\",\"type\":\"mobile\"},\"cpu\":{}}",
+      "type": "2",
+      "_reporter": "true",
+      "id": 8
+    },
+    {
+      "data": "{\"msg\":\"success\",\"timestamp\":1553503574074,\"url\":\"http://localhost:8000/\",\"reporter\":{\"url\":\"http://localhost:3000/reporter\",\"method\":\"POST\",\"status\":null,\"event\":\"load\",\"success\":true,\"duration\":241,\"responseSize\":203,\"requestSize\":0,\"type\":\"xhr\",\"data\":null}}",
+      "type": "6",
+      "id": 9
+    },
+    {
+      "data": "{\"status\":true,\"dns\":0,\"tcp\":0,\"wct\":11,\"dom\":1751,\"load\":-1553503570044,\"ready\":1,\"redirct\":0,\"unload\":0,\"request\":2,\"parsingDom\":3274}",
+      "type": "1",
+      "id": 10
+    },
+    {
+      "data": "[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object]",
+      "type": "4",
+      "id": 11
+    },
+    {
+      "data": "{\"ua\":\"Mozilla/5.0 (iPhone; CPU iPhone OS 11_0 like Mac OS X) AppleWebKit/604.1.38 (KHTML, like Gecko) Version/11.0 Mobile/15A372 Safari/604.1\",\"browser\":{\"name\":\"Mobile Safari\",\"version\":\"11.0\",\"major\":\"11\"},\"engine\":{\"name\":\"WebKit\",\"version\":\"604.1.38\"},\"os\":{\"name\":\"iOS\",\"version\":\"11.0\"},\"device\":{\"vendor\":\"Apple\",\"model\":\"iPhone\",\"type\":\"mobile\"},\"cpu\":{}}",
+      "type": "2",
+      "id": 12
+    },
+    {
+      "data": "{\"msg\":\"success\",\"timestamp\":1553503669401,\"url\":\"http://localhost:8000/\",\"reporter\":{\"url\":\"http://localhost:3000/reporter\",\"method\":\"POST\",\"status\":null,\"event\":\"load\",\"success\":true,\"duration\":285,\"responseSize\":128,\"requestSize\":0,\"type\":\"xhr\",\"data\":null}}",
+      "type": "6",
+      "id": 13
+    },
+    {
+      "data": "{\"status\":true,\"dns\":0,\"tcp\":0,\"wct\":12,\"dom\":477,\"load\":-1553503665896,\"ready\":4,\"redirct\":0,\"unload\":0,\"request\":2,\"parsingDom\":13220}",
+      "type": "1",
+      "id": 14
+    },
+    {
+      "data": "[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object]",
+      "type": "4",
+      "id": 15
+    },
+    {
+      "data": "{\"ua\":\"Mozilla/5.0 (iPhone; CPU iPhone OS 11_0 like Mac OS X) AppleWebKit/604.1.38 (KHTML, like Gecko) Version/11.0 Mobile/15A372 Safari/604.1\",\"browser\":{\"name\":\"Mobile Safari\",\"version\":\"11.0\",\"major\":\"11\"},\"engine\":{\"name\":\"WebKit\",\"version\":\"604.1.38\"},\"os\":{\"name\":\"iOS\",\"version\":\"11.0\"},\"device\":{\"vendor\":\"Apple\",\"model\":\"iPhone\",\"type\":\"mobile\"},\"cpu\":{}}",
+      "type": "2",
+      "id": 16
+    },
+    {
+      "data": "{\"msg\":\"success\",\"timestamp\":1553503786821,\"url\":\"http://localhost:8000/\",\"reporter\":{\"url\":\"http://localhost:3000/reporter\",\"method\":\"POST\",\"status\":null,\"event\":\"load\",\"success\":true,\"duration\":364,\"responseSize\":149,\"requestSize\":0,\"type\":\"xhr\",\"data\":null}}",
+      "type": "6",
+      "id": 17
+    },
+    {
+      "data": "{\"status\":true,\"dns\":0,\"tcp\":0,\"wct\":20,\"dom\":31311,\"load\":-1553503755147,\"ready\":5,\"redirct\":0,\"unload\":0,\"request\":2,\"parsingDom\":15362}",
+      "type": "1",
+      "id": 18
+    },
+    {
+      "data": "{\"ua\":\"Mozilla/5.0 (iPhone; CPU iPhone OS 11_0 like Mac OS X) AppleWebKit/604.1.38 (KHTML, like Gecko) Version/11.0 Mobile/15A372 Safari/604.1\",\"browser\":{\"name\":\"Mobile Safari\",\"version\":\"11.0\",\"major\":\"11\"},\"engine\":{\"name\":\"WebKit\",\"version\":\"604.1.38\"},\"os\":{\"name\":\"iOS\",\"version\":\"11.0\"},\"device\":{\"vendor\":\"Apple\",\"model\":\"iPhone\",\"type\":\"mobile\"},\"cpu\":{}}",
+      "type": "2",
+      "id": 19
+    },
+    {
+      "data": "{\"msg\":\"success\",\"timestamp\":1553503884233,\"url\":\"http://localhost:8000/\",\"reporter\":{\"url\":\"http://localhost:3000/reporter\",\"method\":\"POST\",\"status\":null,\"event\":\"load\",\"success\":true,\"duration\":255,\"responseSize\":155,\"requestSize\":0,\"type\":\"xhr\",\"data\":null}}",
+      "type": "6",
+      "id": 20
+    },
+    {
+      "data": "{\"status\":true,\"dns\":0,\"tcp\":0,\"wct\":10,\"dom\":438,\"load\":-1553503883547,\"ready\":1,\"redirct\":0,\"unload\":0,\"request\":4,\"parsingDom\":5635}",
+      "type": "1",
+      "id": 21
+    },
+    {
+      "data": "[{\"name\":\"http://localhost:8000/output/bundle.umd.js\",\"method\":\"GET\",\"type\":\"script\",\"duration\":\"55.58\",\"decodedBodySize\":114002,\"nextHopProtocol\":\"http/1.1\"},{\"name\":\"https://cdn.bootcss.com/jquery/3.3.1/jquery.min.js\",\"method\":\"GET\",\"type\":\"script\",\"duration\":\"265.13\",\"decodedBodySize\":0,\"nextHopProtocol\":\"h2\"},{\"name\":\"https://cdn.bootcss.com/twitter-bootstrap/4.3.1/js/bootstrap.min.js\",\"method\":\"GET\",\"type\":\"script\",\"duration\":\"282.10\",\"decodedBodySize\":0,\"nextHopProtocol\":\"h2\"},{\"name\":\"http://localhost:3000/reporter\",\"method\":\"GET\",\"type\":\"xmlhttprequest\",\"duration\":\"18.86\",\"decodedBodySize\":0,\"nextHopProtocol\":\"http/1.1\"},{\"name\":\"https://api.hanximeng.com/ranimg/api.php\",\"method\":\"GET\",\"type\":\"img\",\"duration\":\"5713.73\",\"decodedBodySize\":620628,\"nextHopProtocol\":\"h2\"},{\"name\":\"https://v1.hitokoto.cn/?c",
+      "encode": "json\",\"method\":\"GET\",\"type\":\"xmlhttprequest\",\"duration\":\"234.25\",\"decodedBodySize\":229,\"nextHopProtocol\":\"h2\"},{\"name\":\"http://localhost:3000/reporter\",\"method\":\"GET\",\"type\":\"xmlhttprequest\",\"duration\":\"22.11\",\"decodedBodySize\":0,\"nextHopProtocol\":\"http/1.1\"}]",
+      "type": "4",
+      "id": 22
+    },
+    {
+      "data": "{\"ua\":\"Mozilla/5.0 (iPhone; CPU iPhone OS 11_0 like Mac OS X) AppleWebKit/604.1.38 (KHTML, like Gecko) Version/11.0 Mobile/15A372 Safari/604.1\",\"browser\":{\"name\":\"Mobile Safari\",\"version\":\"11.0\",\"major\":\"11\"},\"engine\":{\"name\":\"WebKit\",\"version\":\"604.1.38\"},\"os\":{\"name\":\"iOS\",\"version\":\"11.0\"},\"device\":{\"vendor\":\"Apple\",\"model\":\"iPhone\",\"type\":\"mobile\"},\"cpu\":{}}",
+      "type": "2",
+      "id": 23
+    },
+    {
+      "data": "{\"msg\":\"success\",\"timestamp\":1553504513835,\"url\":\"http://localhost:8000/\",\"reporter\":{\"url\":\"http://localhost:3000/reporter\",\"method\":\"POST\",\"status\":null,\"event\":\"load\",\"success\":true,\"duration\":251,\"responseSize\":140,\"requestSize\":0,\"type\":\"xhr\",\"data\":null}}",
+      "type": "6",
+      "id": 24
+    },
+    {
+      "data": "{\"status\":true,\"dns\":0,\"tcp\":0,\"wct\":19,\"dom\":647,\"load\":-1553504512939,\"ready\":7,\"redirct\":0,\"unload\":0,\"request\":25,\"parsingDom\":5857}",
+      "type": "1",
+      "id": 25
+    },
+    {
+      "data": "{\"ua\":\"Mozilla/5.0 (iPhone; CPU iPhone OS 11_0 like Mac OS X) AppleWebKit/604.1.38 (KHTML, like Gecko) Version/11.0 Mobile/15A372 Safari/604.1\",\"browser\":{\"name\":\"Mobile Safari\",\"version\":\"11.0\",\"major\":\"11\"},\"engine\":{\"name\":\"WebKit\",\"version\":\"604.1.38\"},\"os\":{\"name\":\"iOS\",\"version\":\"11.0\"},\"device\":{\"vendor\":\"Apple\",\"model\":\"iPhone\",\"type\":\"mobile\"},\"cpu\":{}}",
+      "type": "2",
+      "id": 26
+    },
+    {
+      "data": "{\"msg\":\"success\",\"timestamp\":1553504583429,\"url\":\"http://localhost:8000/\",\"reporter\":{\"url\":\"http://localhost:3000/reporter\",\"method\":\"POST\",\"status\":null,\"event\":\"load\",\"success\":true,\"duration\":305,\"responseSize\":141,\"requestSize\":0,\"type\":\"xhr\",\"data\":null}}",
+      "type": "6",
+      "id": 27
+    },
+    {
+      "data": "{\"status\":true,\"dns\":0,\"tcp\":0,\"wct\":409,\"dom\":922,\"load\":-1553504582206,\"ready\":2,\"redirct\":0,\"unload\":0,\"request\":2,\"parsingDom\":9025}",
+      "type": "1",
+      "id": 28
+    },
+    {
+      "data": "{\"ua\":\"Mozilla/5.0 (iPhone; CPU iPhone OS 11_0 like Mac OS X) AppleWebKit/604.1.38 (KHTML, like Gecko) Version/11.0 Mobile/15A372 Safari/604.1\",\"browser\":{\"name\":\"Mobile Safari\",\"version\":\"11.0\",\"major\":\"11\"},\"engine\":{\"name\":\"WebKit\",\"version\":\"604.1.38\"},\"os\":{\"name\":\"iOS\",\"version\":\"11.0\"},\"device\":{\"vendor\":\"Apple\",\"model\":\"iPhone\",\"type\":\"mobile\"},\"cpu\":{}}",
+      "type": "2",
+      "id": 29
+    },
+    {
+      "data": "{\"ua\":\"Mozilla/5.0 (iPhone; CPU iPhone OS 11_0 like Mac OS X) AppleWebKit/604.1.38 (KHTML, like Gecko) Version/11.0 Mobile/15A372 Safari/604.1\",\"browser\":{\"name\":\"Mobile Safari\",\"version\":\"11.0\",\"major\":\"11\"},\"engine\":{\"name\":\"WebKit\",\"version\":\"604.1.38\"},\"os\":{\"name\":\"iOS\",\"version\":\"11.0\"},\"device\":{\"vendor\":\"Apple\",\"model\":\"iPhone\",\"type\":\"mobile\"},\"cpu\":{}}",
+      "type": "2",
+      "id": 30
+    },
+    {
+      "data": "{\"ua\":\"Mozilla/5.0 (iPhone; CPU iPhone OS 11_0 like Mac OS X) AppleWebKit/604.1.38 (KHTML, like Gecko) Version/11.0 Mobile/15A372 Safari/604.1\",\"browser\":{\"name\":\"Mobile Safari\",\"version\":\"11.0\",\"major\":\"11\"},\"engine\":{\"name\":\"WebKit\",\"version\":\"604.1.38\"},\"os\":{\"name\":\"iOS\",\"version\":\"11.0\"},\"device\":{\"vendor\":\"Apple\",\"model\":\"iPhone\",\"type\":\"mobile\"},\"cpu\":{}}",
+      "type": "2",
+      "id": 31
+    },
+    {
+      "data": "{\"msg\":\"success\",\"timestamp\":1553504792188,\"url\":\"http://localhost:8000/\",\"reporter\":{\"url\":\"http://localhost:3000/reporter\",\"method\":\"POST\",\"status\":null,\"event\":\"load\",\"success\":true,\"duration\":2695,\"responseSize\":131,\"requestSize\":0,\"type\":\"xhr\",\"data\":null}}",
+      "type": "6",
+      "id": 32
+    },
+    {
+      "data": "{\"status\":true,\"dns\":0,\"tcp\":0,\"wct\":10,\"dom\":374,\"load\":-1553504789125,\"ready\":1,\"redirct\":0,\"unload\":0,\"request\":2,\"parsingDom\":6476}",
+      "type": "1",
+      "id": 33
+    },
+    {
+      "data": "{\"status\":true,\"dns\":0,\"tcp\":0,\"wct\":11,\"dom\":405,\"load\":-1553504874518,\"ready\":2,\"redirct\":0,\"unload\":0,\"request\":4,\"parsingDom\":11759}",
+      "type": "1",
+      "_reporter": "true",
+      "id": 34
+    },
+    {
+      "data": "{\"ua\":\"Mozilla/5.0 (iPhone; CPU iPhone OS 11_0 like Mac OS X) AppleWebKit/604.1.38 (KHTML, like Gecko) Version/11.0 Mobile/15A372 Safari/604.1\",\"browser\":{\"name\":\"Mobile Safari\",\"version\":\"11.0\",\"major\":\"11\"},\"engine\":{\"name\":\"WebKit\",\"version\":\"604.1.38\"},\"os\":{\"name\":\"iOS\",\"version\":\"11.0\"},\"device\":{\"vendor\":\"Apple\",\"model\":\"iPhone\",\"type\":\"mobile\"},\"cpu\":{}}",
+      "type": "2",
+      "id": 35
+    },
+    {
+      "data": "asdsdsdstest",
+      "type": "reporter",
+      "id": 36
+    },
+    {
+      "data": "{\"msg\":\"success\",\"timestamp\":1553504972147,\"url\":\"http://localhost:8000/\",\"reporter\":{\"url\":\"http://localhost:3000/reporter\",\"method\":\"POST\",\"status\":null,\"event\":\"load\",\"success\":true,\"duration\":3257,\"responseSize\":149,\"requestSize\":0,\"type\":\"xhr\"}}",
+      "type": "6",
+      "id": 37
+    },
+    {
+      "data": "{\"status\":true,\"dns\":0,\"tcp\":0,\"wct\":41,\"dom\":3626,\"load\":-1553505536965,\"ready\":13,\"redirct\":0,\"unload\":0,\"request\":33,\"parsingDom\":7307}",
+      "type": "1",
+      "_reporter": "true",
+      "id": 38
+    },
+    {
+      "data": "{\"ua\":\"Mozilla/5.0 (iPhone; CPU iPhone OS 11_0 like Mac OS X) AppleWebKit/604.1.38 (KHTML, like Gecko) Version/11.0 Mobile/15A372 Safari/604.1\",\"browser\":{\"name\":\"Mobile Safari\",\"version\":\"11.0\",\"major\":\"11\"},\"engine\":{\"name\":\"WebKit\",\"version\":\"604.1.38\"},\"os\":{\"name\":\"iOS\",\"version\":\"11.0\"},\"device\":{\"vendor\":\"Apple\",\"model\":\"iPhone\",\"type\":\"mobile\"},\"cpu\":{}}",
+      "type": "2",
+      "_reporter": "true",
+      "id": 39
+    },
+    {
+      "data": "{\"status\":true,\"dns\":0,\"tcp\":0,\"wct\":24,\"dom\":2664,\"load\":-1553505620556,\"ready\":5,\"redirct\":0,\"unload\":0,\"request\":3,\"parsingDom\":1236}",
+      "type": "1",
+      "_reporter": "true",
+      "id": 40
+    },
+    {
+      "data": "{\"ua\":\"Mozilla/5.0 (iPhone; CPU iPhone OS 11_0 like Mac OS X) AppleWebKit/604.1.38 (KHTML, like Gecko) Version/11.0 Mobile/15A372 Safari/604.1\",\"browser\":{\"name\":\"Mobile Safari\",\"version\":\"11.0\",\"major\":\"11\"},\"engine\":{\"name\":\"WebKit\",\"version\":\"604.1.38\"},\"os\":{\"name\":\"iOS\",\"version\":\"11.0\"},\"device\":{\"vendor\":\"Apple\",\"model\":\"iPhone\",\"type\":\"mobile\"},\"cpu\":{}}",
+      "type": "2",
+      "_reporter": "true",
+      "id": 41
+    },
+    {
+      "data": "{\"status\":true,\"dns\":0,\"tcp\":0,\"wct\":34,\"dom\":552,\"load\":-1553505914303,\"ready\":8,\"redirct\":0,\"unload\":0,\"request\":12,\"parsingDom\":7353}",
+      "type": "1",
+      "_reporter": "true",
+      "id": 42
+    },
+    {
+      "data": "{\"ua\":\"Mozilla/5.0 (iPhone; CPU iPhone OS 11_0 like Mac OS X) AppleWebKit/604.1.38 (KHTML, like Gecko) Version/11.0 Mobile/15A372 Safari/604.1\",\"browser\":{\"name\":\"Mobile Safari\",\"version\":\"11.0\",\"major\":\"11\"},\"engine\":{\"name\":\"WebKit\",\"version\":\"604.1.38\"},\"os\":{\"name\":\"iOS\",\"version\":\"11.0\"},\"device\":{\"vendor\":\"Apple\",\"model\":\"iPhone\",\"type\":\"mobile\"},\"cpu\":{}}",
+      "type": "2",
+      "_reporter": "true",
+      "id": 43
+    },
+    {
+      "data": "{\"msg\":\"success\",\"timestamp\":1553505934415,\"url\":\"http://localhost:8000/\",\"reporter\":{\"url\":\"http://localhost:3000/reporter\",\"method\":\"POST\",\"status\":null,\"event\":\"load\",\"success\":true,\"duration\":152,\"responseSize\":147,\"requestSize\":0,\"type\":\"xhr\"}}",
+      "type": "6",
+      "_reporter": "true",
+      "id": 44
+    },
+    {
+      "data": "{\"msg\":\"img is load error.\",\"timestamp\":1553506057738,\"url\":\"http://localhost:8000/\",\"source\":\"<img src=\\\"https://api.hanximeng.com/ranimg/api.php\\\" width=\\\"100%\\\">\",\"reporter\":{\"type\":\"error\",\"target\":\"<img src=\\\"https://api.hanximeng.com/ranimg/api.php\\\" width=\\\"100%\\\">\"}}",
+      "type": "4",
+      "_reporter": "true",
+      "id": 45
+    },
+    {
+      "data": "{\"msg\":\"success\",\"timestamp\":1553506071466,\"url\":\"http://localhost:8000/\",\"reporter\":{\"url\":\"http://localhost:3000/reporter\",\"method\":\"POST\",\"status\":null,\"event\":\"load\",\"success\":true,\"duration\":110,\"responseSize\":132,\"requestSize\":0,\"type\":\"xhr\"}}",
+      "type": "6",
+      "_reporter": "true",
+      "id": 46
+    },
+    {
+      "data": "{\"msg\":\"success\",\"timestamp\":1553506093552,\"url\":\"http://localhost:8000/\",\"reporter\":{\"url\":\"http://localhost:3000/reporter\",\"method\":\"POST\",\"status\":null,\"event\":\"load\",\"success\":true,\"duration\":278,\"responseSize\":146,\"requestSize\":0,\"type\":\"xhr\"}}",
+      "type": "6",
+      "_reporter": "true",
+      "id": 47
+    },
+    {
+      "data": "{\"status\":true,\"dns\":0,\"tcp\":0,\"wct\":18,\"dom\":4774,\"load\":-1553506291824,\"ready\":2,\"redirct\":0,\"unload\":0,\"request\":2,\"parsingDom\":14019}",
+      "type": "1",
+      "_reporter": "true",
+      "id": 48
+    },
+    {
+      "data": "{\"ua\":\"Mozilla/5.0 (iPhone; CPU iPhone OS 11_0 like Mac OS X) AppleWebKit/604.1.38 (KHTML, like Gecko) Version/11.0 Mobile/15A372 Safari/604.1\",\"browser\":{\"name\":\"Mobile Safari\",\"version\":\"11.0\",\"major\":\"11\"},\"engine\":{\"name\":\"WebKit\",\"version\":\"604.1.38\"},\"os\":{\"name\":\"iOS\",\"version\":\"11.0\"},\"device\":{\"vendor\":\"Apple\",\"model\":\"iPhone\",\"type\":\"mobile\"},\"cpu\":{}}",
+      "type": "2",
+      "_reporter": "true",
+      "id": 49
+    },
+    {
+      "data": "{\"msg\":\"success\",\"timestamp\":1553506323932,\"url\":\"http://localhost:8000/\",\"reporter\":{\"url\":\"https://v1.hitokoto.cn/?c=a",
+      "encode": "json\",\"method\":\"POST\",\"status\":null,\"event\":\"load\",\"success\":true,\"duration\":194,\"responseSize\":152,\"requestSize\":0,\"type\":\"xhr\"}}",
+      "type": "6",
+      "_reporter": "true",
+      "id": 50
+    },
+    {
+      "data": "{\"status\":true,\"dns\":0,\"tcp\":0,\"wct\":20,\"dom\":531,\"load\":-1553506605043,\"ready\":5,\"redirct\":0,\"unload\":0,\"request\":3,\"parsingDom\":5696}",
+      "type": "1",
+      "_reporter": "true",
+      "id": 51
+    },
+    {
+      "data": "{\"ua\":\"Mozilla/5.0 (iPhone; CPU iPhone OS 11_0 like Mac OS X) AppleWebKit/604.1.38 (KHTML, like Gecko) Version/11.0 Mobile/15A372 Safari/604.1\",\"browser\":{\"name\":\"Mobile Safari\",\"version\":\"11.0\",\"major\":\"11\"},\"engine\":{\"name\":\"WebKit\",\"version\":\"604.1.38\"},\"os\":{\"name\":\"iOS\",\"version\":\"11.0\"},\"device\":{\"vendor\":\"Apple\",\"model\":\"iPhone\",\"type\":\"mobile\"},\"cpu\":{}}",
+      "type": "2",
+      "_reporter": "true",
+      "id": 52
+    },
+    {
+      "data": "{\"msg\":\"success\",\"timestamp\":1553506632647,\"url\":\"http://localhost:8000/\",\"reporter\":\"{\\\"url\\\":\\\"https://v1.hitokoto.cn/?c=a",
+      "encode": "json\\\",\\\"method\\\":\\\"GET\\\",\\\"status\\\":200,\\\"event\\\":\\\"load\\\",\\\"success\\\":true,\\\"duration\\\":1427,\\\"responseSize\\\":160,\\\"requestSize\\\":0,\\\"type\\\":\\\"xhr\\\"}\"}",
+      "type": "6",
+      "_reporter": "true",
+      "id": 53
+    },
+    {
+      "data": "{\"status\":true,\"dns\":0,\"tcp\":0,\"wct\":21,\"dom\":1045,\"load\":-1553506777093,\"ready\":4,\"redirct\":0,\"unload\":0,\"request\":1,\"parsingDom\":8877}",
+      "type": "1",
+      "_reporter": "true",
+      "id": 54
+    },
+    {
+      "data": "{\"ua\":\"Mozilla/5.0 (iPhone; CPU iPhone OS 11_0 like Mac OS X) AppleWebKit/604.1.38 (KHTML, like Gecko) Version/11.0 Mobile/15A372 Safari/604.1\",\"browser\":{\"name\":\"Mobile Safari\",\"version\":\"11.0\",\"major\":\"11\"},\"engine\":{\"name\":\"WebKit\",\"version\":\"604.1.38\"},\"os\":{\"name\":\"iOS\",\"version\":\"11.0\"},\"device\":{\"vendor\":\"Apple\",\"model\":\"iPhone\",\"type\":\"mobile\"},\"cpu\":{}}",
+      "type": "2",
+      "_reporter": "true",
+      "id": 55
+    },
+    {
+      "data": "{\"msg\":\"success\",\"timestamp\":1553506790260,\"url\":\"http://localhost:8000/\",\"reporter\":\"{\"url\":\"https://v1.hitokoto.cn/?c=a&encode=json\",\"method\":\"GET\",\"status\":200,\"event\":\"load\",\"success\":true,\"duration\":102,\"responseSize\":130,\"requestSize\":0,\"type\":\"xhr\"}\"}",
+      "type": "6",
+      "_reporter": "true",
+      "id": 56
+    },
+    {
+      "data": "{\"status\":true,\"dns\":0,\"tcp\":0,\"wct\":18,\"dom\":481,\"load\":-1553506914705,\"ready\":2,\"redirct\":0,\"unload\":0,\"request\":2,\"parsingDom\":8483}",
+      "type": "1",
+      "_reporter": "true",
+      "id": 57
+    },
+    {
+      "data": "{\"ua\":\"Mozilla/5.0 (iPhone; CPU iPhone OS 11_0 like Mac OS X) AppleWebKit/604.1.38 (KHTML, like Gecko) Version/11.0 Mobile/15A372 Safari/604.1\",\"browser\":{\"name\":\"Mobile Safari\",\"version\":\"11.0\",\"major\":\"11\"},\"engine\":{\"name\":\"WebKit\",\"version\":\"604.1.38\"},\"os\":{\"name\":\"iOS\",\"version\":\"11.0\"},\"device\":{\"vendor\":\"Apple\",\"model\":\"iPhone\",\"type\":\"mobile\"},\"cpu\":{}}",
+      "type": "2",
+      "_reporter": "true",
+      "id": 58
+    },
+    {
+      "data": "{\"status\":true,\"dns\":0,\"tcp\":0,\"wct\":9,\"dom\":562,\"load\":-1553506955185,\"ready\":4,\"redirct\":0,\"unload\":0,\"request\":3,\"parsingDom\":43560}",
+      "type": "1",
+      "_reporter": "true",
+      "id": 59
+    },
+    {
+      "data": "{\"ua\":\"Mozilla/5.0 (iPhone; CPU iPhone OS 11_0 like Mac OS X) AppleWebKit/604.1.38 (KHTML, like Gecko) Version/11.0 Mobile/15A372 Safari/604.1\",\"browser\":{\"name\":\"Mobile Safari\",\"version\":\"11.0\",\"major\":\"11\"},\"engine\":{\"name\":\"WebKit\",\"version\":\"604.1.38\"},\"os\":{\"name\":\"iOS\",\"version\":\"11.0\"},\"device\":{\"vendor\":\"Apple\",\"model\":\"iPhone\",\"type\":\"mobile\"},\"cpu\":{}}",
+      "type": "2",
+      "_reporter": "true",
+      "id": 60
+    },
+    {
+      "data": "{\"status\":true,\"dns\":0,\"tcp\":0,\"wct\":10,\"dom\":257,\"load\":-1553507002308,\"ready\":4,\"redirct\":0,\"unload\":0,\"request\":2,\"parsingDom\":10277}",
+      "type": "1",
+      "_reporter": "true",
+      "id": 61
+    },
+    {
+      "data": "{\"ua\":\"Mozilla/5.0 (iPhone; CPU iPhone OS 11_0 like Mac OS X) AppleWebKit/604.1.38 (KHTML, like Gecko) Version/11.0 Mobile/15A372 Safari/604.1\",\"browser\":{\"name\":\"Mobile Safari\",\"version\":\"11.0\",\"major\":\"11\"},\"engine\":{\"name\":\"WebKit\",\"version\":\"604.1.38\"},\"os\":{\"name\":\"iOS\",\"version\":\"11.0\"},\"device\":{\"vendor\":\"Apple\",\"model\":\"iPhone\",\"type\":\"mobile\"},\"cpu\":{}}",
+      "type": "2",
+      "_reporter": "true",
+      "id": 62
+    },
+    {
+      "data": "{\"msg\":\"success\",\"timestamp\":1553507282040,\"url\":\"http://localhost:8000/\",\"reporter\":\"{\"url\":\"https://v1.hitokoto.cn/?c=a&encode=json\",\"method\":\"GET\",\"status\":200,\"event\":\"load\",\"success\":true,\"duration\":3215,\"responseSize\":128,\"requestSize\":0,\"type\":\"xhr\",\"data\":null}\"}",
+      "type": "6",
+      "_reporter": "true",
+      "id": 63
+    },
+    {
+      "data": "{\"status\":true,\"dns\":0,\"tcp\":0,\"wct\":11,\"dom\":3364,\"load\":-1553507275454,\"ready\":2,\"redirct\":0,\"unload\":0,\"request\":2,\"parsingDom\":4631}",
+      "type": "1",
+      "_reporter": "true",
+      "id": 64
+    },
+    {
+      "data": "{\"ua\":\"Mozilla/5.0 (iPhone; CPU iPhone OS 11_0 like Mac OS X) AppleWebKit/604.1.38 (KHTML, like Gecko) Version/11.0 Mobile/15A372 Safari/604.1\",\"browser\":{\"name\":\"Mobile Safari\",\"version\":\"11.0\",\"major\":\"11\"},\"engine\":{\"name\":\"WebKit\",\"version\":\"604.1.38\"},\"os\":{\"name\":\"iOS\",\"version\":\"11.0\"},\"device\":{\"vendor\":\"Apple\",\"model\":\"iPhone\",\"type\":\"mobile\"},\"cpu\":{}}",
+      "type": "2",
+      "_reporter": "true",
+      "id": 65
+    },
+    {
+      "data": "{\"msg\":\"success\",\"timestamp\":1553507303786,\"url\":\"http://localhost:8000/\",\"reporter\":\"{\"url\":\"https://v1.hitokoto.cn/?c=a&encode=json\",\"method\":\"GET\",\"status\":200,\"event\":\"load\",\"success\":true,\"duration\":231,\"responseSize\":146,\"requestSize\":0,\"type\":\"xhr\",\"data\":null}\"}",
+      "type": "6",
+      "_reporter": "true",
+      "id": 66
+    },
+    {
+      "data": "{\"status\":true,\"dns\":0,\"tcp\":0,\"wct\":20,\"dom\":2189,\"load\":-1553507301368,\"ready\":5,\"redirct\":0,\"unload\":0,\"request\":3,\"parsingDom\":11964}",
+      "type": "1",
+      "_reporter": "true",
+      "id": 67
+    },
+    {
+      "data": "{\"ua\":\"Mozilla/5.0 (iPhone; CPU iPhone OS 11_0 like Mac OS X) AppleWebKit/604.1.38 (KHTML, like Gecko) Version/11.0 Mobile/15A372 Safari/604.1\",\"browser\":{\"name\":\"Mobile Safari\",\"version\":\"11.0\",\"major\":\"11\"},\"engine\":{\"name\":\"WebKit\",\"version\":\"604.1.38\"},\"os\":{\"name\":\"iOS\",\"version\":\"11.0\"},\"device\":{\"vendor\":\"Apple\",\"model\":\"iPhone\",\"type\":\"mobile\"},\"cpu\":{}}",
+      "type": "2",
+      "_reporter": "true",
+      "id": 68
+    },
+    {
+      "data": "{\"msg\":\"success\",\"timestamp\":1553508787820,\"url\":\"http://localhost:8000/\",\"reporter\":\"{\"url\":\"https://v1.hitokoto.cn/?c=a&encode=json\",\"method\":\"GET\",\"status\":200,\"event\":\"load\",\"success\":true,\"duration\":251,\"responseSize\":130,\"requestSize\":0,\"type\":\"xhr\",\"data\":null}\"}",
+      "type": "6",
+      "_reporter": "true",
+      "id": 69
+    },
+    {
+      "data": "{\"status\":true,\"dns\":0,\"tcp\":0,\"wct\":45,\"dom\":591,\"load\":-1553508786988,\"ready\":10,\"redirct\":0,\"unload\":0,\"request\":5,\"parsingDom\":4935}",
+      "type": "1",
+      "_reporter": "true",
+      "id": 70
+    },
+    {
+      "data": "{\"ua\":\"Mozilla/5.0 (iPhone; CPU iPhone OS 11_0 like Mac OS X) AppleWebKit/604.1.38 (KHTML, like Gecko) Version/11.0 Mobile/15A372 Safari/604.1\",\"browser\":{\"name\":\"Mobile Safari\",\"version\":\"11.0\",\"major\":\"11\"},\"engine\":{\"name\":\"WebKit\",\"version\":\"604.1.38\"},\"os\":{\"name\":\"iOS\",\"version\":\"11.0\"},\"device\":{\"vendor\":\"Apple\",\"model\":\"iPhone\",\"type\":\"mobile\"},\"cpu\":{}}",
+      "type": "2",
+      "_reporter": "true",
+      "id": 71
+    },
+    {
+      "data": "[{\"name\":\"http://localhost:8000/output/bundle.umd.js\",\"method\":\"GET\",\"type\":\"script\",\"duration\":\"55.72\",\"decodedBodySize\":121251,\"nextHopProtocol\":\"http/1.1\"},{\"name\":\"https://cdn.bootcss.com/jquery/3.3.1/jquery.min.js\",\"method\":\"GET\",\"type\":\"script\",\"duration\":\"372.53\",\"decodedBodySize\":0,\"nextHopProtocol\":\"h2\"},{\"name\":\"https://cdn.bootcss.com/twitter-bootstrap/4.3.1/js/bootstrap.min.js\",\"method\":\"GET\",\"type\":\"script\",\"duration\":\"356.57\",\"decodedBodySize\":0,\"nextHopProtocol\":\"h2\"},{\"name\":\"https://v1.hitokoto.cn/?c=a",
+      "encode": "json\",\"method\":\"GET\",\"type\":\"xmlhttprequest\",\"duration\":\"212.22\",\"decodedBodySize\":166,\"nextHopProtocol\":\"h2\"},{\"name\":\"http://localhost:3000/reporter\",\"method\":\"GET\",\"type\":\"xmlhttprequest\",\"duration\":\"16.30\",\"decodedBodySize\":0,\"nextHopProtocol\":\"http/1.1\"},{\"name\":\"https://api.hanximeng.com/ranimg/api.php\",\"method\":\"GET\",\"type\":\"img\",\"duration\":\"4559.87\",\"decodedBodySize\":309522,\"nextHopProtocol\":\"h2\"}]",
+      "type": "4",
+      "_reporter": "true",
+      "id": 72
+    },
+    {
+      "data": "{\"msg\":\"success\",\"timestamp\":1553508823502,\"url\":\"http://localhost:8000/\",\"reporter\":\"{\"url\":\"https://v1.hitokoto.cn/?c=a&encode=json\",\"method\":\"GET\",\"status\":200,\"event\":\"load\",\"success\":true,\"duration\":440,\"responseSize\":136,\"requestSize\":0,\"type\":\"xhr\",\"data\":null}\"}",
+      "type": "6",
+      "_reporter": "true",
+      "id": 73
+    },
+    {
+      "data": "{\"status\":true,\"dns\":0,\"tcp\":0,\"wct\":17,\"dom\":2657,\"load\":-1553508820407,\"ready\":4,\"redirct\":0,\"unload\":0,\"request\":3,\"parsingDom\":18583}",
+      "type": "1",
+      "_reporter": "true",
+      "id": 74
+    },
+    {
+      "data": "{\"ua\":\"Mozilla/5.0 (iPhone; CPU iPhone OS 11_0 like Mac OS X) AppleWebKit/604.1.38 (KHTML, like Gecko) Version/11.0 Mobile/15A372 Safari/604.1\",\"browser\":{\"name\":\"Mobile Safari\",\"version\":\"11.0\",\"major\":\"11\"},\"engine\":{\"name\":\"WebKit\",\"version\":\"604.1.38\"},\"os\":{\"name\":\"iOS\",\"version\":\"11.0\"},\"device\":{\"vendor\":\"Apple\",\"model\":\"iPhone\",\"type\":\"mobile\"},\"cpu\":{}}",
+      "type": "2",
+      "_reporter": "true",
+      "id": 75
+    },
+    {
+      "data": "[{\"name\":\"http://localhost:8000/output/bundle.umd.js\",\"method\":\"GET\",\"type\":\"script\",\"duration\":\"82.05\",\"decodedBodySize\":121251,\"nextHopProtocol\":\"http/1.1\"},{\"name\":\"https://cdn.bootcss.com/jquery/3.3.1/jquery.min.js\",\"method\":\"GET\",\"type\":\"script\",\"duration\":\"2569.84\",\"decodedBodySize\":0,\"nextHopProtocol\":\"h2\"},{\"name\":\"https://cdn.bootcss.com/twitter-bootstrap/4.3.1/js/bootstrap.min.js\",\"method\":\"GET\",\"type\":\"script\",\"duration\":\"2577.68\",\"decodedBodySize\":0,\"nextHopProtocol\":\"h2\"},{\"name\":\"https://api.hanximeng.com/ranimg/api.php\",\"method\":\"GET\",\"type\":\"img\",\"duration\":\"20908.69\",\"decodedBodySize\":2209678,\"nextHopProtocol\":\"h2\"},{\"name\":\"https://v1.hitokoto.cn/?c=a",
+      "encode": "json\",\"method\":\"GET\",\"type\":\"xmlhttprequest\",\"duration\":\"425.49\",\"decodedBodySize\":186,\"nextHopProtocol\":\"h2\"},{\"name\":\"http://localhost:3000/reporter\",\"method\":\"GET\",\"type\":\"xmlhttprequest\",\"duration\":\"17.12\",\"decodedBodySize\":0,\"nextHopProtocol\":\"http/1.1\"}]",
+      "type": "4",
+      "_reporter": "true",
+      "id": 76
+    },
+    {
+      "data": "{\"msg\":\"success\",\"timestamp\":1553508844563,\"url\":\"http://localhost:8000/\",\"reporter\":\"{\"url\":\"https://v1.hitokoto.cn/?c=a&encode=json\",\"method\":\"GET\",\"status\":200,\"event\":\"load\",\"success\":true,\"duration\":208,\"responseSize\":152,\"requestSize\":0,\"type\":\"xhr\",\"data\":null}\"}",
+      "type": "6",
+      "_reporter": "true",
+      "id": 77
+    },
+    {
+      "data": "{\"status\":true,\"dns\":0,\"tcp\":0,\"wct\":23,\"dom\":362,\"load\":-1553508843994,\"ready\":4,\"redirct\":0,\"unload\":0,\"request\":1,\"parsingDom\":10006}",
+      "type": "1",
+      "_reporter": "true",
+      "id": 78
+    },
+    {
+      "data": "{\"ua\":\"Mozilla/5.0 (iPhone; CPU iPhone OS 11_0 like Mac OS X) AppleWebKit/604.1.38 (KHTML, like Gecko) Version/11.0 Mobile/15A372 Safari/604.1\",\"browser\":{\"name\":\"Mobile Safari\",\"version\":\"11.0\",\"major\":\"11\"},\"engine\":{\"name\":\"WebKit\",\"version\":\"604.1.38\"},\"os\":{\"name\":\"iOS\",\"version\":\"11.0\"},\"device\":{\"vendor\":\"Apple\",\"model\":\"iPhone\",\"type\":\"mobile\"},\"cpu\":{}}",
+      "type": "2",
+      "_reporter": "true",
+      "id": 79
+    },
+    {
+      "data": "[{\"name\":\"http://localhost:8000/output/bundle.umd.js\",\"method\":\"GET\",\"type\":\"script\",\"duration\":\"32.35\",\"decodedBodySize\":121251,\"nextHopProtocol\":\"http/1.1\"},{\"name\":\"https://cdn.bootcss.com/jquery/3.3.1/jquery.min.js\",\"method\":\"GET\",\"type\":\"script\",\"duration\":\"148.88\",\"decodedBodySize\":0,\"nextHopProtocol\":\"h2\"},{\"name\":\"https://cdn.bootcss.com/twitter-bootstrap/4.3.1/js/bootstrap.min.js\",\"method\":\"GET\",\"type\":\"script\",\"duration\":\"158.35\",\"decodedBodySize\":0,\"nextHopProtocol\":\"h2\"},{\"name\":\"https://api.hanximeng.com/ranimg/api.php\",\"method\":\"GET\",\"type\":\"img\",\"duration\":\"10018.31\",\"decodedBodySize\":1161549,\"nextHopProtocol\":\"h2\"},{\"name\":\"https://v1.hitokoto.cn/?c=a",
+      "encode": "json\",\"method\":\"GET\",\"type\":\"xmlhttprequest\",\"duration\":\"197.12\",\"decodedBodySize\":222,\"nextHopProtocol\":\"h2\"},{\"name\":\"http://localhost:3000/reporter\",\"method\":\"GET\",\"type\":\"xmlhttprequest\",\"duration\":\"11.88\",\"decodedBodySize\":0,\"nextHopProtocol\":\"http/1.1\"}]",
+      "type": "4",
+      "_reporter": "true",
+      "id": 80
+    }
+  ]
+}

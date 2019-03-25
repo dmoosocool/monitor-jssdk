@@ -1,4 +1,5 @@
 import { REPORT_TYPE, REPORT_DATA} from  '../interfaces/reportdata';
+export const SERVER_URL = 'http://localhost:3000/reporter';
 export const K_REQ_QUEUE = 'MONITOR_QUEUE';
 export const E_REPORT_TYPE = REPORT_TYPE;
 export interface I_REPORT_DATA extends REPORT_DATA {};
